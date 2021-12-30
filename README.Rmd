@@ -1,0 +1,22 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Advent of Code
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+_By [Daniel Silva](https://damarals.github.io)_
+
+This repository contains some of my attempts to solve programming puzzles in the [Advent of Code](https://adventofcode.com).
+I will be mostly using the programming language R, with data and solutions presented as this portfolio repository.
