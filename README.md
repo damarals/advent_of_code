@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-*By [Daniel Silva](https://damarals.github.io)*
+*By [Daniel Silva](https://damarals.github.io/blog/)*
 
 This repository contains some of my attempts to solve programming
 puzzles in the [Advent of Code](https://adventofcode.com). I will be

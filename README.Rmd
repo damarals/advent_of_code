@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-_By [Daniel Silva](https://damarals.github.io)_
+_By [Daniel Silva](https://damarals.github.io/blog/)_
 
 This repository contains some of my attempts to solve programming puzzles in the [Advent of Code](https://adventofcode.com).
 I will be mostly using the programming language R, with data and solutions presented as this portfolio repository.
