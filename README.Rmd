@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Advent of Code
+# Advent of Code (AoC)
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -20,3 +20,37 @@ _By [Daniel Silva](https://damarals.github.io/blog/)_
 
 This repository contains some of my attempts to solve programming puzzles in the [Advent of Code](https://adventofcode.com).
 I will be mostly using the programming language R, with data and solutions presented as this portfolio repository.
+
+# Content
+
+```{r, echo = FALSE, include = FALSE}
+# Knit all day solutions to html rmarkdown
+files <- list.files(recursive = TRUE)
+
+solutions <- grep(r"{/main.R$}", files, value = TRUE)
+for(sol in solutions) {
+  rmarkdown::render(sol, quiet = TRUE)
+}
+```
+
+```{r, echo = FALSE, include = FALSE}
+dirs <- list.dirs()
+
+years <- grep(r"{^\./\d{4}$}", dirs, value = TRUE)
+years <- gsub(r"{\./}", "", years)
+
+days <- sapply(years, \(yr) {
+  d <- grep(paste0("\\./", yr, "/"), dirs, value = TRUE)
+  gsub(r"{.+(?=\d{2}$)}", "", d, perl = TRUE)
+}, simplify = FALSE, USE.NAMES = TRUE)
+```
+
+```{r, echo = FALSE, results = "asis"}
+# make table of contents
+for(year in years) {
+  cat(sprintf("### AoC %s", year), sep = "\n")
+  for(day in days[[year]]) {
+    cat(sprintf("- [Day %s](https://damarals.github.io/advent_of_code/%s/%s/main.html)", day, year, day), sep = "\n")
+  }
+}
+```
