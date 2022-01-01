@@ -1,7 +1,7 @@
 # Advent of Code 2021 solutions
 aoc_solutions <- list(
-  day01a = NA,
-  day01b = NA,
+  day01a = 1759,
+  day01b = 1805,
   day02a = NA,
   day02b = NA,
   day03a = NA,
